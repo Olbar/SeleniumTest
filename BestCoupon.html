@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://ec2-52-31-177-160.eu-west-1.compute.amazonaws.com/" />
+<title>BestCoupon</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">BestCoupon</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/open-eshop-2.0.1/oc-panel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=eShop</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Coupons</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.bs-docs-nav i[class=&quot;glyphicon glyphicon-pencil&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=div.bs-docs-nav i[class=&quot;glyphicon glyphicon-pencil&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.form-group input[id=&quot;name&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=div.form-group input[id=name]</td>
+	<td>BestCoupon</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=div.form-group input[id=discount_amount]</td>
+	<td>100</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=div.form-group input[name=valid_date]</td>
+	<td>2016-04-26 </td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=div.form-group input[id=number_coupons]</td>
+	<td>4</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=div.form-group input[id=number_coupons]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.form-actions button[name='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.form-actions button[name='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.alert-success</td>
+	<td>× SuccessCoupon BestCoupon created</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=name</td>
+	<td>BestCoupon</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=button.btn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div#content td</td>
+	<td>BestCoupon</td>
+</tr>
+</tbody></table>
+</body>
+</html>

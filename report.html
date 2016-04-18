@@ -1,0 +1,391 @@
+<html>
+<head><style type='text/css'>
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style><title>Test suite results</title></head>
+<body>
+<h1>Test suite results </h1>
+
+<table>
+<tr>
+<td>result:</td>
+<td>passed</td>
+</tr>
+<tr>
+<td>totalTime:</td>
+<td>9</td>
+</tr>
+<tr>
+<td>numTestTotal:</td>
+<td>4</td>
+</tr>
+<tr>
+<td>numTestPasses:</td>
+<td>4</td>
+</tr>
+<tr>
+<td>numTestFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandPasses:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandErrors:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Selenium Version:</td>
+<td>2.53</td>
+</tr>
+<tr>
+<td>Selenium Revision:</td>
+<td>.0</td>
+</tr>
+<tr>
+<td>
+<table id="suiteTable" class="selenium" border="1" cellpadding="1" cellspacing="1"><tbody>
+<tr class="title status_passed"><td><b>Test Suite</b></td></tr>
+<tr class="  status_passed"><td><a href="#testresult0">login</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult1">BestCoupon</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult2">search</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult3">logout</a></td></tr>
+</tbody></table>
+
+
+</td>
+<td>&nbsp;</td>
+</tr>
+</table><table><tr>
+<td><a name="testresult0">login.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">login</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/open-eshop-2.0.1/oc-panel/auth/login</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>css=div#main input[placeholder='Email']</td>
+	<td>demo@open-eshop.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>css=div#main input[placeholder='Password']</td>
+	<td>demo</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div#main button[type='submit']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>link=Panel</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult1">BestCoupon.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">BestCoupon</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/open-eshop-2.0.1/oc-panel</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=eShop</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Coupons</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=div.bs-docs-nav i[class="glyphicon glyphicon-pencil"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAt</td>
+	<td>css=div.bs-docs-nav i[class="glyphicon glyphicon-pencil"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=div.form-group input[id="name"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>css=div.form-group input[id=name]</td>
+	<td>BestCoupon</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>css=div.form-group input[id=discount_amount]</td>
+	<td>100</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>css=div.form-group input[name=valid_date]</td>
+	<td>2016-04-26 </td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>css=div.form-group input[id=number_coupons]</td>
+	<td>4</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAt</td>
+	<td>css=div.form-group input[id=number_coupons]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=div.form-actions button[name='submit']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div.form-actions button[name='submit']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForText</td>
+	<td>css=div.alert-success</td>
+	<td>?? SuccessCoupon BestCoupon created</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=name</td>
+	<td>BestCoupon</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAt</td>
+	<td>css=button.btn</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=div#content td</td>
+	<td>BestCoupon</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult2">search.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">search</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/open-eshop-2.0.1/oc-panel/Coupon?name=</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=div.form-group input[name='name']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>css=div.form-group input[name='name']</td>
+	<td>BestCoupon</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=button.btn</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForLocation</td>
+	<td>http://ec2-52-31-177-160.eu-west-1.compute.amazonaws.com/open-eshop-2.0.1/oc-panel/Coupon?name=BestCoupon</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=div#content td</td>
+	<td>BestCoupon</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=i.glyphicon-trash</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementPresent</td>
+	<td>css=div.sweet-alert button[tabindex='1']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div.sweet-alert button[tabindex='1']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>name=name</td>
+	<td>BestCoupon</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=button.btn</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForElementNotPresent</td>
+	<td>css=i.glyphicon-trash</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult3">logout.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">logout</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>/open-eshop-2.0.1/oc-panel/Coupon?name=BestCoupon</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=ul.dropdown-menu a[href='http://ec2-52-31-177-160.eu-west-1.compute.amazonaws.com/open-eshop-2.0.1/oc-panel/auth/logout']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>waitForTitle</td>
+	<td>Login - open-eshop</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr></table><pre>
+info: Starting test /selenium-server/tests/login.html
+info: Executing: |open | /open-eshop-2.0.1/oc-panel/auth/login |  |
+info: Executing: |type | css=div#main input[placeholder=&apos;Email&apos;] | demo@open-eshop.com |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | css=div#main input[placeholder=&apos;Password&apos;] | demo |
+info: Executing: |click | css=div#main button[type=&apos;submit&apos;] |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |waitForElementPresent | link=Panel |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Starting test /selenium-server/tests/BestCoupon.html
+info: Executing: |open | /open-eshop-2.0.1/oc-panel |  |
+info: Executing: |click | link=eShop |  |
+info: Executing: |click | link=Coupons |  |
+info: Executing: |waitForElementPresent | css=div.bs-docs-nav i[class=&quot;glyphicon glyphicon-pencil&quot;] |  |
+info: Executing: |clickAt | css=div.bs-docs-nav i[class=&quot;glyphicon glyphicon-pencil&quot;] |  |
+info: Executing: |waitForElementPresent | css=div.form-group input[id=&quot;name&quot;] |  |
+info: Executing: |type | css=div.form-group input[id=name] | BestCoupon |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | css=div.form-group input[id=discount_amount] | 100 |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | css=div.form-group input[name=valid_date] | 2016-04-26 |
+info: Executing: |type | css=div.form-group input[id=number_coupons] | 4 |
+info: Executing: |clickAt | css=div.form-group input[id=number_coupons] |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |waitForElementPresent | css=div.form-actions button[name=&apos;submit&apos;] |  |
+info: Executing: |click | css=div.form-actions button[name=&apos;submit&apos;] |  |
+info: Executing: |waitForText | css=div.alert-success | ?? SuccessCoupon BestCoupon created |
+info: Executing: |type | name=name | BestCoupon |
+info: Executing: |clickAt | css=button.btn |  |
+info: Executing: |waitForElementPresent | css=div#content td | BestCoupon |
+info: Starting test /selenium-server/tests/search.html
+info: Executing: |open | /open-eshop-2.0.1/oc-panel/Coupon?name= |  |
+info: Executing: |waitForElementPresent | css=div.form-group input[name=&apos;name&apos;] |  |
+info: Executing: |type | css=div.form-group input[name=&apos;name&apos;] | BestCoupon |
+info: Executing: |click | css=button.btn |  |
+info: Executing: |waitForLocation | http://ec2-52-31-177-160.eu-west-1.compute.amazonaws.com/open-eshop-2.0.1/oc-panel/Coupon?name=BestCoupon |  |
+info: Executing: |waitForElementPresent | css=div#content td | BestCoupon |
+info: Executing: |click | css=i.glyphicon-trash |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |waitForElementPresent | css=div.sweet-alert button[tabindex=&apos;1&apos;] |  |
+info: Executing: |click | css=div.sweet-alert button[tabindex=&apos;1&apos;] |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |type | name=name | BestCoupon |
+info: Executing: |click | css=button.btn |  |
+info: Executing: |waitForElementNotPresent | css=i.glyphicon-trash |  |
+info: Starting test /selenium-server/tests/logout.html
+info: Executing: |open | /open-eshop-2.0.1/oc-panel/Coupon?name=BestCoupon |  |
+info: Executing: |click | css=ul.dropdown-menu a[href=&apos;http://ec2-52-31-177-160.eu-west-1.compute.amazonaws.com/open-eshop-2.0.1/oc-panel/auth/logout&apos;] |  |
+info: Executing: |click | link=Logout |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |waitForTitle | Login - open-eshop |  |
+</pre></body></html>
